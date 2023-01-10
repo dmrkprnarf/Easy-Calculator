@@ -24,14 +24,14 @@ class ViewController: UIViewController {
         senderTitle = sender.titleLabel?.text!
         if let IntOne = textfield1.text , let IntTwo = textfield2.text {
             if let valueOne = Int(IntOne) , let valueTwo = Int(IntTwo) {
-                hesapla(sayi1: valueOne, sayi2: valueTwo)
+                calculate(sayi1: valueOne, sayi2: valueTwo)
             }else {
                 resultLabel.text = "You entered a non-digit value."
             }
         }
     }
     
-    func hesapla(sayi1:Int,sayi2:Int) {
+    func calculate(sayi1:Int,sayi2:Int) {
         if senderTitle! == "Add" {
             let result =  sayi1 + sayi2
             resultLabel.text = "Result : \(result)"
