@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     var senderTitle:String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        textfield1.placeholder = "Type the number you want to calculate."
-        textfield2.placeholder = "Type the number you want to calculate."
+        textfield1.placeholder = "Type the number you want to calculate.."
+        textfield2.placeholder = "Type the number you want to calculate.."
     }
     
     @IBAction func clickToCalculate(_ sender: UIButton) {
