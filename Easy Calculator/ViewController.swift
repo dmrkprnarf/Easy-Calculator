@@ -24,28 +24,28 @@ class ViewController: UIViewController {
         senderTitle = sender.titleLabel?.text!
         if let IntOne = textfield1.text , let IntTwo = textfield2.text {
             if let valueOne = Int(IntOne) , let valueTwo = Int(IntTwo) {
-                calculate(sayi1: valueOne, sayi2: valueTwo)
+                calculate(num1: valueOne, num2: valueTwo)
             }else {
                 resultLabel.text = "You entered a non-digit value."
             }
         }
     }
     
-    func calculate(sayi1:Int,sayi2:Int) {
+    func calculate(num1:Int,num2:Int) {
         if senderTitle! == "Add" {
-            let result =  sayi1 + sayi2
+            let result =  num1 + num2
             resultLabel.text = "Result : \(result)"
         }
         if senderTitle! == "Subtract" {
-            let result =  sayi1 - sayi2
+            let result =  num1 - num2
             resultLabel.text = "Result : \(result)"
         }
         if senderTitle! == "Multiply" {
-            let result =  sayi1 * sayi2
+            let result =  num1 * num2
             resultLabel.text = "Result : \(result)"
         }
         if senderTitle! == "Divide" {
-            let result =  sayi1 / sayi2
+            let result =  num1 / num2
             resultLabel.text = "Result : \(result)"
         }
         
